@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Loco | Booking</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="/">Hotel LOCO</a></h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a class="current" href="/booking">Booking</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="section1" id="section">
+        <h2 style="text-align: center;">Hello <%= username %> !, you can book your room easily.</h2>
+        <div class="form-style">
+            <div class="card-container">
+                <div class="card-img" id="cardimage"></div>
+
+                <div class="card-content">
+                    <h3>Reservation</h3>
+
+                    <form id="reservationForm" action="/make-reservation" method="POST">
+                        <div class="elem-group inlined">
+                            <label for="checkin-date">Check-in Date</label>
+                            <input type="date" id="checkin-date" name="checkin" required>
+                        </div>
+                        <div class="elem-group inlined">
+                            <label for="checkout-date">Check-out Date</label>
+                            <input type="date" id="checkout-date" name="checkout" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Phone Number</label>
+                            <input name="phoneNumber" type="text" placeholder="+212*********" required>
+                            <label>How many Persons</label>
+                            <input name="hPerson" type="number" placeholder="0" min="1" max="5" required>
+                        </div>
+
+                        <div class="form-row book">
+                            <input type="submit" value="Book Room" />
+                        </div>
+                        <p>We will contact you at your phone number for more details.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./js/booking.js"></script>
+
+</html>

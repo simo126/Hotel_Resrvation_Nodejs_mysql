@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Loco | About</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="/">Hotel LOCO</a></h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a class="current" href="/about">About</a></li>
+          <% if (username) { %>
+            <li><a href="/reservations">My Reservations</a></li>
+            <li><a href="/logout">Logout</a></li>
+
+            <% } else { %>
+              <li><a href="/login">Login</a></li>
+              <% } %>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="about-info" class="bg-light py-3">
+    <div class="container">
+      <div class="info-left">
+        <h1 class="l-heading"><span class="Welcome">About</span> Hotel Loco</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium vero id quisquam beatae explicabo
+          voluptas aperiam asperiores quod veniam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorem officiis voluptas ullam sit neque!</p>
+      </div>
+      <div class="info-right">
+        <img src="../imgs/aboutimg.jpg" alt="our Hotel">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="clr"></div>
+
+
+
+  <section id="testimonilas" class="py-3">
+    <div class="container">
+      <h2 class="l-heading">What Our Guests Say</h2>
+      <div class="testimonil bg-primary">
+        <img src="../imgs/Simo.jpg" alt="simo">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, nesciunt provident, facilis recusandae
+          temporibus molestiae iste sunt vero ratione, illo optio pariatur tempore. Doloribus ipsum, laboriosam enim
+          voluptatum animi aut?</p>
+      </div>
+      <div class="testimonil bg-primary">
+        <img src="../imgs/samiar.jpg" alt="Sbaiti">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, nesciunt provident, facilis recusandae
+          temporibus molestiae iste sunt vero ratione, illo optio pariatur tempore. Doloribus ipsum, laboriosam enim
+          voluptatum animi aut?</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer id="main-footer">
+    <p>Hotel LOCO &copy; 2024, All Rights Reserved</p>
+  </footer>
+</body>
+
+
+</html>

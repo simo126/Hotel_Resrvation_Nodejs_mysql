@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Loco | Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="/">Hotel LOCO</a></h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a class="current" href="/login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <Section>
+        <div class="form-style">
+            <form action="/login" method="POST">
+
+                <fieldset>
+                    <legend>Login</legend>
+                    <input type="email" name="email" placeholder="Your Email ">
+                    <input type="password" name="password" placeholder="Your Password">
+                    <p>You Dont Have An Account? <a href="/register">Register</a></p>
+                </fieldset>
+                <input type="submit" value="Login" />
+                <% if (typeof error !=='undefined' ) { %>
+                    <p
+                        style="color: red; text-align: center; border: 2px solid red; border-radius: 5px; background-color: white;">
+                        <%= error %>
+                    </p>
+                    <% } %>
+            </form>
+        </div>
+    </Section>
+    <div class="clr"></div>
+    <footer id="main-footer">
+        <p>Hotel LOCO &copy; 2024 By Mohammed Sbaiti & Ait Hssaine Mohamed</p>
+    </footer>
+</body>
+
+</html>
