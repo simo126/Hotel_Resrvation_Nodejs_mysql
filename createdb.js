@@ -5,7 +5,7 @@ async function createDatabaseAndTables(databaseName) {
     const connection = await mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "azer1234A", // Replace with your password
+      password: "your password", // Replace with your password
     });
 
     // database
